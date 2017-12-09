@@ -1,0 +1,23 @@
+{
+  "name": "kachit/rest-utils",
+  "description": "Simple rest utils suite",
+  "minimum-stability": "stable",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kachit",
+      "email": "kachit@yandex.ru"
+    }
+  ],
+  "autoload": {
+    "psr-4": { "Kachit\\Rest\\": "src/" }
+  },
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "codeception/codeception": "2.3.*",
+    "justblackbird/codeception-config-module": "^1.0"
+  }
+}

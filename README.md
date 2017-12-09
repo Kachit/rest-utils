@@ -1,2 +1,2 @@
-# rest-utils
-Simple rest utils
+# Rest utils
+Simple rest utils suite
