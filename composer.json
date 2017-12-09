@@ -1,6 +1,10 @@
 {
   "name": "kachit/rest-utils",
   "description": "Simple rest utils suite",
+  "keywords": [
+    "rest",
+    "utils"
+  ],
   "minimum-stability": "stable",
   "type": "library",
   "license": "MIT",
