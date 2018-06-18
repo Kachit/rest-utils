@@ -9,7 +9,6 @@ namespace Kachit\Rest;
 
 use Kachit\Rest\Meta\Paginator;
 use Throwable;
-use Teapot\StatusCode;
 
 class Factory
 {
@@ -69,13 +68,14 @@ class Factory
 
     /**
      * @param array $validation
-     * @return Error[]
+     * @param int $code
+     * @return array
      */
-    public function createErrorsFromValidation(array $validation): array
+    public function createErrorsFromValidation(array $validation, int $code = 400): array
     {
         $errors = [];
         foreach ($validation as $key => $value) {
-            $errors[] = new Error(StatusCode::BAD_REQUEST, $value);
+            $errors[] = new Error($code, $value);
         }
         return $errors;
     }
